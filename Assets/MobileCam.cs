@@ -23,6 +23,7 @@ public class MobileCam : MonoBehaviour {
 		for (int i = 0; i < devices.Length; i++)
 		{
 			var curr = devices[i];
+            Debug.Log("Found camera: " + curr.name);
 
 			if (curr.isFrontFacing == frontFacing)
 			{
